@@ -1,0 +1,10 @@
+---
+applications:
+- name: pwsjhipster
+  memory: 1024M
+  instances: 1
+  host: pwsjhipster-${random-word}
+  path: cf-jhipster-0.0.1-SNAPSHOT.war
+  buildpack: https://github.com/cloudfoundry/java-buildpack
+  services:
+  - pwsjhipster
